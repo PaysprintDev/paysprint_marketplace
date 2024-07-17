@@ -222,12 +222,97 @@
 
 @media screen and (max-width: 700px) {
     .marketing {
+        header {
+            div {
+                padding: 15px 20px;
+            }
+        }
+        section.head {
+            div.all {
+                div.txts {
+                    padding: 1rem 0rem;
+                    h3 {
+                        font-size: 30px;
+                        line-height: unset;
+                    }
+                    h6 {
+                        font-size: 15px;
+                        line-height: unset;
+                    }
+                }
+                button {
+                    font-size: 25px;
+                    border-radius: 10px;
+                }
+                button:hover {
+                    background-color: #fff;
+                    color: #000;
+                }
+            }
+        }
+
         section.why {
+            h3 {
+                font-size: 40px;
+                line-height: 40px;
+            }
             div.reasons {
                 div {
                     flex-direction: column !important;
                 }
+                div.colored, div.normal {
+                    gap: 30px;
+                    img {
+                        width: 100%;
+                    }
+                    div{
+                        h4 {
+                            font-size: 30px;
+                            line-height: 30px;
+                        }
+                        p {
+                            font-size: 17px;
+                        }
+                    }
+                }
+            }
+        }
+
+        section.reviews {
+            div.init {
+                h3 {
+                    font-size: 35px;
+                    line-height: 35px;
+                }
+                 p {
+                    font-size: 20px;
+                    line-height: 25px;
+                 }
+            }
+            div.testimonies {
+                padding: 30px;
+                grid-template-columns: repeat(1, 1fr);
             }
         }
     }
+}
+
+
+@media screen and (max-width: 500px) {
+    .marketing {
+        header {
+            div {
+                ul {
+                    gap: 30px;
+                    li {
+                        a {
+                            line-height: 20px;
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
 }
