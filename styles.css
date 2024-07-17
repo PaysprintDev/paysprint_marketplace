@@ -86,6 +86,82 @@
         }
     }
 
+    section.why {
+        padding: 30px 0px;
+        width: 100%;
+        h3 {
+            text-align: center;
+            font: 550 60px 'Abril Fatface';
+            line-height: 80px;
+            margin-bottom: 1rem;
+        }
+
+        div.reasons {
+            div.colored {
+                padding: 40px 45px;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                gap: 90px;
+                background-color: #FFE7B8;
+                img {
+                    border-radius: 67px;
+                }
+                div {
+                    h4 {
+                        font: 550 50px 'Abril Fatface';
+                        line-height: 67px;
+                        margin-bottom: 1rem;
+                    }
+                    p {
+                        font: 400 30px 'Abril Fatface';
+                        font-family: sans-serif;
+                    }
+                }
+            }
+            div.normal {
+                padding: 40px 45px;
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-around;
+                align-items: center;
+                gap: 90px;
+                background-color: #fff;
+                img {
+                    border-radius: 67px;
+                }
+                div {
+                    h4 {
+                        font: 550 50px 'Abril Fatface';
+                        line-height: 67px;
+                        margin-bottom: 1rem;
+                    }
+                    p {
+                        font: 400 30px 'Abril Fatface';
+                        font-family: sans-serif;
+                    }
+                }
+            }
+        }
+    }
+
+    
 
 
+}
+
+
+
+
+
+@media screen and (max-width: 700px) {
+    .marketing {
+        section.why {
+            div.reasons {
+                div {
+                    flex-direction: column !important;
+                }
+            }
+        }
+    }
 }
