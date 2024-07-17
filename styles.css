@@ -145,7 +145,73 @@
         }
     }
 
-    
+    section.reviews {
+        div.init {
+            h3 {
+                font: 550 60px 'abril fatface';
+                line-height: 60px;
+                text-align: center;
+            }
+            p {
+                font: 550 30px 'abril fatface';
+                line-height: 45px;
+                text-align: center;
+            }
+        }
+        div.testimonies {
+            padding: 64px;
+            display: grid;
+            gap: 2rem;
+            grid-template-columns: repeat(3, 1fr);
+            .innerman {
+                border: 1px solid #d9d9d9;
+                border-radius: 20px;
+                padding: 25px;
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                .stars {
+                    display: flex;
+                    gap: 7px;
+                    align-items: center;
+                }
+                .text {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    h6 {
+                        font: 600 24px 'Inter';
+                        font-family: sans-serif;
+                    }
+                    p {
+                        font: 400 16px 'Inter';
+                        font-family: sans-serif;
+                    }
+                }
+                .whoposted {
+                    display: flex;
+                    gap: 12px;
+                    align-items: center;
+                    img {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                    div {
+                        h6 {
+                            font: 600 16px 'Inter';
+                            font-family: sans-serif;
+                        }
+                        p {
+                            font: 400 16px 'Inter';
+                            font-family: sans-serif;
+                            color: #B3B3B3;
+                        }
+                    }
+                }
+            }
+        }
+    }
 
 
 }
