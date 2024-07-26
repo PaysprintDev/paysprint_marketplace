@@ -1,7 +1,11 @@
+
+body {
+    margin: unset;
+}
+
 .marketing {
     background-color: #fff;
     font-family: monospace;
-
 
     h1, h2, h3, h4, h5, h6, p {
         margin: unset;
@@ -213,6 +217,17 @@
         }
     }
 
+    footer {
+        padding: 60px 65px;
+        background-color: #000;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        gap: 90px;
+        div.first {
+
+        }
+    }
 
 }
 
