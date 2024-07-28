@@ -312,8 +312,24 @@ body {
 
 
 @media screen and (max-width: 1023px) {
-    footer {
-        padding: 50px;
+    .marketing {
+        footer {
+            padding: 50px;
+            width: 100%;
+            div.first {
+                .links {
+                    gap: 25px;
+                }
+            }
+            div.last {
+                .location {
+                    flex-direction: column;
+                    align-items: unset;
+                    justify-content: unset;
+                    gap: 30px;
+                }
+            }
+        }
     }
 }
 
@@ -398,6 +414,20 @@ body {
 }
 
 
+@media screen and (max-width: 600px) {
+    .marketing {
+        footer {
+            div.first {
+                flex-direction: column;
+                gap: 35px;
+                .links {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 500px) {
     .marketing {
         header {
@@ -412,6 +442,10 @@ body {
                     }
                 }
             }
+        }
+
+        footer {
+            padding: 20px;
         }
     }
     
